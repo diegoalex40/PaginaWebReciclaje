@@ -1,0 +1,49 @@
+/* Selector universal*/
+*{
+    margin: 10;
+}
+
+/*Selector de tipo*/
+h1{
+    color: green;
+}
+
+/*Selector de clase*/
+.header{
+    text-align: center;
+}
+
+/*Selector de ID*/
+#animals{
+    text-align: center;
+}
+
+/*Pesudo-Clases*/
+p:first-child{
+    color: indigo;
+}
+
+p:last-child{
+    color: lawngreen;
+}
+
+p:nth-child(2n){
+    color: mediumblue;
+}
+
+/*Pseudo-elementos*/
+p::after {
+    content: "  :)";
+}
+
+.ballena::before{
+    content: "Ex= ";
+    color: rgb(119, 113, 113);
+}
+
+p::first-letter{
+    color: orangered;
+    font-size: 20px;
+    font-style: italic;
+
+}
