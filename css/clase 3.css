@@ -47,3 +47,21 @@ p::first-letter{
     font-style: italic;
 
 }
+
+.caja1{
+    width: 20px;
+    height: 20px;
+    background-color: #2b2d42;
+    padding: 20px;
+    border: 2px solid #d90429;
+    margin: 10px 20px 30px 40px;
+}
+
+.caja2{
+    width: 30px;
+    height: 30px;
+    background-color: #8d99ae;
+    padding: 30px;
+    border: 2px solid #ef233c;
+    margin: 10px;
+}
