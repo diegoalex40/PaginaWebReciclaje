@@ -1,0 +1,18 @@
+.boton{
+    font-size: 70%;
+    font-family: Helvetica;
+    background-image: linear-gradient(#EEE, rgb(228, 230, 241));
+    border-radius: 5px;
+    padding: 7px 12px;
+    border: 1px solid black;
+}
+
+.boton--succes{
+    background:  #569E3D linear-gradient(#79D858, #569E3D);
+    color: whitesmoke;
+    border-color: #3e9431;
+}
+
+.boton--danger{
+    background: rgb(219, 44, 13) linear-gradient(rgb(223, 116, 46), rgb(219, 46, 46));
+}
