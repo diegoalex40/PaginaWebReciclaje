@@ -1,13 +1,13 @@
 body{
     margin: 0;
-    background: #f48c06;
+    background: #226191;
     font-family: Urbanist, sans-serif;
 }
 
 .header{
     width: 100%;
     height: 90px;
-    background: #f48c06;
+    background: #226191;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,7 +45,7 @@ body{
 
 .header__menu li a{
     text-decoration: none;
-    color: rgb(61, 37, 0);
+    color:white;
 }
 
 .header__menu li a:hover{
@@ -67,4 +67,29 @@ body{
 
 .header__menu--profile p{
     margin: 0;
+    color: white;
+}
+
+.main{
+    height: 300px;
+}
+
+.main__titulo{
+    font-size: 25px;
+    color: white;
+}
+
+.input{
+    border: 2px white solid;
+    border-radius: 30px;
+    padding: 0px 20px;
+    height: 30px;
+    font-size: 16px;
+    width: 70%;
+    background: #1e7597;
+}
+
+::placeholder{
+    color: white;
+
 }
