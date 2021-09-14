@@ -91,5 +91,61 @@ body{
 
 ::placeholder{
     color: white;
+}
 
+.carousel{
+    width: 100%;
+    /*crear un scroll en el carusel*/
+    overflow: scroll;
+    padding-left: 30px;
+    /*todos los elementos se van a posicionar apartir de este elemento*/
+    position: relative;
+}
+
+.carousel__container{
+    /*funcion dedicada a que los elementos sigan en una misma linea no se montan para abajo como en block*/
+    white-space: nowrap;
+    margin: 75px 0px;
+    /*evitar que se corte la imagen cuando se agrande*/
+    padding-bottom: 15px;
+}
+
+.carousel-item{
+    background: aqua;
+    width: 200px;
+    height: 250px;
+    border-radius: 25px;
+    /*evita distorcion al momento de agrandar*/
+    overflow: hidden;
+    margin-left: 10px;
+    /*Cambiamos a flex viene por defecto block*/
+    display: inline-block;
+    /*Cambia el cursor cuando esta sobre el item*/
+    cursor: pointer;
+    /*Velocidad de transision a una velocidad especifica*/
+    transition: 450ms all;
+    /*El primer item no excede su contenedor*/
+    transform-origin: center left;
+}
+
+    /*
+    1- .carousel-item:hover --> selecciona el item del carrusel cuando esta con el mouse encima.
+    2- "~" selecciona todos los elementos menos elemento siguiente.
+    */
+.carousel-item:hover ~ .carousel-item{
+    /* Mueve a la x positiva 100px [x,y,z], si se usa "traslate" no aplica el aje Z*/
+    transform: translate3d( 100px, 0px, 0px);
+}
+
+/*selecciona al container cuando esta en hover y aplica sobre los .carousel-item*/
+.carousel__container:hover .carousel-item{
+    /*pacidad del 30%*/
+    opacity: 30%;
+}
+
+.carousel__container:hover .carousel-item:hover{
+    /*Cuando pasamos el mouse encima del item aumenta su escala en 50%*/
+    transform: scale(1.5);
+    /*Opacidad normal*/
+    opacity: 1;
 }
