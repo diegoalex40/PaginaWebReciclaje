@@ -126,6 +126,7 @@ body{
     transition: 450ms all;
     /*El primer item no excede su contenedor*/
     transform-origin: center left;
+    position: relative;
 }
 
     /*
@@ -148,4 +149,34 @@ body{
     transform: scale(1.5);
     /*Opacidad normal*/
     opacity: 1;
+}
+
+.carousel-item__img{
+    width: 200px;
+    height: 250px;
+    /*evitar distorcio de imagen*/
+    object-fit: cover;
+}
+
+.carousel-item__details{
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+    font-size: 10px;
+    opacity: 0;
+    transition: 450ms opacity;
+    padding: 10px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    color: #72b01d;
+}
+
+.carousel-item__details:hover{
+    opacity: 1;
+}
+
+.carousel-item__details-img{
+    width: 30px;
+    height: 30px;
 }
