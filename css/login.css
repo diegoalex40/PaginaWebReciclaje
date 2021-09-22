@@ -18,3 +18,60 @@ body{
     margin-left: 10px;
     margin-top: 5px;
 }
+
+.login{
+    background: linear-gradient( #2490bb, #4e329a);
+    /*Alinear contenido en columnas y centrados*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 30px;
+    /*min-height: calc() => Por mas alto que sea la pantalla este va a ser nuestro valor minimo
+    , se vasta en el % de vista del usuario. Es una operacion matematica donde del 100% de la vista de
+    altura (ViewHeigh), se le da un valor de 200px independientemente del resto*/
+    min-height: calc(100vh - 200px);
+}
+
+.login__container{
+    background-color: rgba(255, 255, 255, 0.1);
+    border: rgba(255, 255, 255) solid 2px;
+    border-radius: 40px;
+    color: white;
+    padding: 60px 68px 40px;
+    min-height: 700px;
+    width: 300px;
+    text-align: center;
+}
+
+.login__container--form{
+    display: flex;
+    flex-direction: column;
+}
+
+.login__container--form label{
+    font-size: 14px;
+}
+
+.login_container--rememberme{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.login_container--rememberme a{
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+}
+
+.login_container--rememberme a:hover{
+    text-decoration: underline;
+}
+/*De esta manera hacemos que aplique a todos los divs de manera imperativa*/
+.login__container--social-media > div{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
