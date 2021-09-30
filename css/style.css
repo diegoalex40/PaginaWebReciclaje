@@ -87,7 +87,7 @@ body{
     border: 2px white solid;
     border-radius: 30px;
     padding: 0px 20px;
-    height: 30px;
+    height: 40px;
     font-size: 16px;
     width: 70%;
     background: #1e7597;
@@ -99,6 +99,12 @@ body{
     color: white;
 }
 
+.Carrusel__Tittle{
+    color: white;
+    font-size: 26px;
+    padding: 10px;
+}
+
 .carousel{
     width: 100%;
     /*crear un scroll en el carusel*/
@@ -108,6 +114,18 @@ body{
     /*Ocultar el carrusel vertical*/
     overflow-x: scroll;
     overflow-y:hidden;
+}
+ /*-webkit-scrollbar --> el elemento que envuelve al conjunto
+   -webkit-scrollbar-thumb --> la almohadilla de la barra*/
+.carousel::-webkit-scrollbar {
+    /*Elimina la configuracion basica*/
+    -webkit-appearance: none;
+}
+
+.carousel::-webkit-scrollbar-thumb {
+    background-color: #6c8ead;
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
 }
 
 .carousel__container{
